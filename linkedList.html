@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script src="node.js"></script>
+<script src="linkedList.js"></script>
+<script>
+    var linkObj = new LinkedList();
+
+    var node1 = new Node();
+    node1.setData(1);
+
+    var node2 = new Node();
+    node2.setData(2);
+
+    var node3 = new Node();
+    node3.setData(3);
+
+    linkObj.addNodeAtFornt(node3);
+    linkObj.addNodeAtFornt(node2);
+    linkObj.addNodeAtFornt(node1);
+
+    var node4 = new Node();
+    node4.setData(4);
+
+    linkObj.addNodeAtEnd(node4);
+
+    var node5 = new Node();
+    node5.setData(5);
+    linkObj.addNodeAtEnd(node5);
+    linkObj.printAll();
+
+</script>
+</body>
+</html>
